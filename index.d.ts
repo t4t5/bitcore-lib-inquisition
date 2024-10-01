@@ -355,6 +355,7 @@ export namespace Networks {
     const livenet: Network;
     const mainnet: Network;
     const testnet: Network;
+    const regtest: Network;
 
     function add(data: any): Network;
     function remove(network: Network): void;
