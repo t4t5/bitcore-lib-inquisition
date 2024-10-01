@@ -119,7 +119,7 @@ export namespace Transaction {
     interface SighashPreimage {
       transaction: Transaction,
       sighashType: number,
-      inputNumber: number,
+      inputIndex: number,
       sigversion: number,
       execdata: ExecData
     }
