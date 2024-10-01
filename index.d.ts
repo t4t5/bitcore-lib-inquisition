@@ -151,6 +151,7 @@ export class Transaction {
     change(address: Address | string): this;
     fee(amount: number): this;
     feePerKb(amount: number): this;
+    feePerByte(amount: number): this;
     sign(privateKey: PrivateKey | string): this;
     applySignature(sig: crypto.Signature): this;
     addInput(input: Transaction.Input): this;
