@@ -116,22 +116,17 @@ export namespace Transaction {
       codeseparatorPosInit: boolean
     }
 
-    namespace SighashSchnorr {
-      function sighash(
-        transaction: Transaction,
-        sighashType: number,
-        inputNumber: number,
-        sigversion: number,
-        execdata: ExecData
-      ): Buffer
+    interface SighashPreimage {
+      transaction: Transaction,
+      sighashType: number,
+      inputNumber: number,
+      sigversion: number,
+      execdata: ExecData
+    }
 
-      function sighashPreimage(
-        transaction: Transaction,
-        sighashType: number,
-        inputNumber: number,
-        sigversion: number,
-        execdata: ExecData
-      ): Buffer
+    namespace SighashSchnorr {
+      function sighash(sighashPreimage: SighashPreimage): Buffer
+      function sighashPreimage(sighashPreimage: SighashPreimage): Buffer
     }
 }
 
