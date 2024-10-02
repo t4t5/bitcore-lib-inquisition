@@ -102,7 +102,7 @@ export namespace Transaction {
           hashData: Buffer,
           signingMethod: 'ecdsa' | 'schnorr' | undefined,
           merkleRoot: undefined
-        ): Transaction.TransactionSignature
+        ): Transaction.TransactionSignature[]
 
         addSignature(transaction: Transaction, signature: TransactionSignature): void
     }
