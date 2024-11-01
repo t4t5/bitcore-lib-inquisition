@@ -39,7 +39,7 @@
     "bn.js": "5.2.1",
     "bs58": "^4.0.1",
     "buffer-compare": "=1.1.1",
-    "elliptic": "^6.5.3",
+    "elliptic": "https://github.com/t4t5/elliptic#master",
     "inherits": "=2.0.1",
     "lodash": "^4.17.20"
   },
